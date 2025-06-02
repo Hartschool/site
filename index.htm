@@ -20,12 +20,13 @@
             max-width: 2000px; /* Mantendo o tamanho grande */
         }
         .btn {
-    font-size: 50px !important; /* Tamanho maior no desktop */
-    padding: 30px 40px !important; /* Espaçamento adequado */
+    font-size: 44px !important; /* Ajuste ideal no desktop */
+    padding: 25px 35px !important; /* Mantém espaçamento adequado */
     background-color: #FF0000 !important; /* Mantém visibilidade */
     color: white !important; /* Garante contraste */
-    display: inline-block !important; /* Evita ocultação */
+    display: inline-block !important; /* Evita problemas de desaparecimento */
     border-radius: 5px !important; /* Mantém arredondamento */
+}
 }
         .cursor {
             position: absolute;
@@ -35,6 +36,11 @@
     transform: translate(-50%, -50%);
     opacity: 1;
     animation: click 1s infinite;
+}
+        .logo {
+    max-width: 800px !important; /* Ajusta tamanho adequado no desktop */
+    width: auto !important; /* Evita distorção */
+    height: auto !important; /* Mantém proporção correta */
 }
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
@@ -49,17 +55,16 @@
     }
 
     .logo {
-        display: block !important; /* Evita problemas de alinhamento */
-        margin: 0 auto !important; /* Garante centralização */
-        max-width: 600px !important; /* Mantém um tamanho proporcional */
-        height: auto !important; /* Mantém proporção adequada */
+        display: block !important; /* Evita desalinhamento */
+        margin: 0 auto !important; /* Centraliza corretamente */
+        max-width: 600px !important; /* Mantém proporção adequada */
+        height: auto !important;
     }
 }
 
     .btn {
-        font-size: 14px !important; /* Mantém menor no celular */
-        padding: 5px 10px !important; /* Espaçamento correto */
-        margin-top: -10px !important; /* Continua mais próximo do logotipo */
+        font-size: 18px !important; /* Mantém menor no celular */
+        padding: 10px 15px !important; /* Ajusta espaçamento proporcionalmente */
     }
 }
             
