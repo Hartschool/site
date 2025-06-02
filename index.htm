@@ -41,8 +41,13 @@
 
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
-            .container {
-                max-width: 350% !important; /* Expande o logotipo no celular */
+    .logo {
+        width: 100% !important; /* Expande o logotipo */
+        max-width: 350px !important; /* Define um limite */
+        display: block;
+        margin: auto; /* Centraliza a imagem */
+    }
+}
             }
             .logo {
         width: 110% !important; /* Expande a imagem além do tamanho original */
