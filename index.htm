@@ -19,10 +19,12 @@
             height: auto;
             max-width: 2000px; /* Mantendo o tamanho grande */
         }
-        font-size: 32px !important; /* Volta ao tamanho correto no desktop */
+        .btn {
+    font-size: 32px !important; /* Volta ao tamanho correto no desktop */
     padding: 20px 30px !important; /* Mantém o espaçamento adequado */
-    margin-top: 20px !important; /* Ajusta posição corretamente */
-    display: inline-block !important; /* Garante que o botão não seja afetado por outras regras */
+    background-color: #FF0000 !important; /* Garante que o fundo vermelho reapareça */
+    color: white !important; /* Mantém o texto visível */
+    display: inline-block !important; /* Evita problemas de desaparecimento */
 }
         .cursor {
             position: absolute;
@@ -32,10 +34,6 @@
     transform: translate(-50%, -50%);
     opacity: 1;
     animation: click 1s infinite;
-}
-.btn {
-    font-size: 32px /* Volta ao tamanho correto no desktop */
-    padding: 20px 30px /* Mantém o espaçamento adequado */
 }
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
