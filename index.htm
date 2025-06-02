@@ -42,16 +42,17 @@
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
     .logo {
-        width: 100% !important; /* Expande completamente no celular */
-        max-width: 350px !important; /* Define um limite */
+        width: auto !important; /* Mantém proporção natural */
+        max-width: 80% !important; /* Aumenta no celular */
         display: block;
         margin: auto; /* Centraliza */
     }
+
+    .btn {
+        padding: 12px 20px !important; /* Mantém tamanho adequado no celular */
+        font-size: 18px !important;
+    }
 }
-            }
-            .btn {
-                padding:7px 15px;
-                font-size: 15px;
             }
             .cursor {
                 width: 50px; /* Reduz a mãozinha para telas menores */
