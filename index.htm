@@ -68,11 +68,12 @@
 }
             }
             .cursor {
-                width: 50px; /* Reduz a mãozinha para telas menores */
-                top: 93% !important; /* Força a alteração */
-                left: 65% !important; /* Move um pouco para a direita no celular */
-            }
-        }
+        position: absolute !important;
+        left: 60% !important; /* Move mais para a direita */
+        top: 93% !important; /* Mantém a altura correta */
+        transform: translateX(-50%) !important; /* Ajusta para o centro */
+    }
+}
 
         @keyframes click {
             0% { transform: translate(-50%, -50%) scale(1); }
