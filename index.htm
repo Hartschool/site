@@ -20,8 +20,9 @@
             max-width: 2000px; /* Mantendo o tamanho grande */
         }
         .btn {
-    font-size: 44px !important; /* Tamanho adequado no desktop */
-    padding: 25px 35px !important; /* Mantém espaçamento correto */
+    font-size: 36px !important; /* Ajuste adequado para desktop */
+    padding: 20px 30px !important; /* Espaçamento adequado */
+}
     background-color: #FF0000 !important; /* Mantém visibilidade */
     color: white !important; /* Garante contraste */
     display: inline-block !important; /* Evita desaparecimento */
@@ -30,7 +31,8 @@
 }
         .cursor {
             position: absolute;
-    width: 50px;
+    width: 30px !important; /* Reduz tamanho no desktop */
+}
     top: 99%;
     left: 59%; /* Mantém a posição que estava no desktop */
     transform: translate(-50%, -50%);
@@ -38,7 +40,7 @@
     animation: click 1s infinite;
 }
         .logo {
-    max-width: 1000px !important; /* Ajuste adequado no desktop */
+    max-width: 1000px !important; /* Ajuste adequado para desktop */
     width: auto !important; /* Evita distorção */
     height: auto !important; /* Mantém proporção correta */
 }
@@ -55,21 +57,21 @@
     }
 
     .logo {
-        display: block !important; /* Evita desalinhamento */
+        display: block !important;
         margin: 0 auto !important; /* Centraliza corretamente */
-        max-width: 600px !important; /* Mantém proporção adequada */
+        max-width: 600px !important;
         height: auto !important;
     }
 }
 
     .btn {
-        font-size: 18px !important; /* Mantém menor no celular */
-        padding: 10px 15px !important; /* Espaçamento adequado */
+        font-size: 18px !important; /* Ajuste menor para celular */
+        padding: 10px 15px !important; /* Espaçamento proporcional */
     }
 }
             
             .cursor {
-        left: 65% !important; /* Move apenas no celular, sem mexer no desktop */
+        width: 20px !important; /* Ajuste menor para celular */
     }
 }
 
