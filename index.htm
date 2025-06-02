@@ -31,13 +31,13 @@
         }
         .cursor {
             position: absolute;
-            top: 99%;
-            left: 59%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            opacity: 1;
-            animation: click 1s infinite;
-        }
+    width: 50px;
+    top: 99%;
+    left: 59%; /* Mantém a posição que estava no desktop */
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: click 1s infinite;
+}
 .btn {
     font-size: 32px /* Volta ao tamanho correto no desktop */
     padding: 20px 30px /* Mantém o espaçamento adequado */
@@ -68,7 +68,7 @@
 }
             }
             .cursor {
-        left: 60% !important; /* Move mais para a direita no celular */
+        left: 65% !important; /* Move apenas no celular, sem mexer no desktop */
     }
 }
 
