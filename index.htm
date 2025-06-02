@@ -42,10 +42,15 @@
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
     .logo {
-        width: 100% !important; /* Expande o logotipo */
-        max-width: 350px !important; /* Define um limite */
+        width: 80% !important; /* Aumenta o logotipo no celular */
+        max-width: 350px !important; /* Define um limite de tamanho */
         display: block;
         margin: auto; /* Centraliza a imagem */
+    }
+
+    /* Removendo alteração incorreta que afetava o botão */
+    .container {
+        max-width: 100% !important; /* Mantém tamanho normal */
     }
 }
             }
