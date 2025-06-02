@@ -20,12 +20,14 @@
             max-width: 2000px; /* Mantendo o tamanho grande */
         }
         .btn {
-    font-size: 44px !important; /* Mantém o tamanho correto no desktop */
-    padding: 25px 35px !important; /* Ajusta espaçamento adequado */
+    font-size: 44px !important; /* Garante que o botão aumente no desktop */
+    padding: 25px 35px !important; /* Ajusta espaçamento proporcionalmente */
     background-color: #FF0000 !important; /* Mantém visibilidade */
     color: white !important; /* Garante contraste adequado */
-    display: inline-block !important; /* Evita problemas de desaparecimento */
+    display: inline-block !important; /* Impede que outras regras escondam o botão */
     border-radius: 5px !important; /* Mantém o formato arredondado */
+    width: auto !important; /* Evita restrição de tamanho */
+    max-width: none !important; /* Garante que não haja limitação */
 }
         .cursor {
             position: absolute;
@@ -39,6 +41,8 @@
         /* Ajuste para dispositivos menores */
         @media (max-width: 768px) {
     .container {
+        max-width: 100% !important; /* Permite o botão crescer sem restrições */
+}
         display: flex !important;
         justify-content: center !important; /* Centraliza horizontalmente */
         align-items: center !important; /* Centraliza verticalmente */
