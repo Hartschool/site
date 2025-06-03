@@ -49,6 +49,13 @@
 
         /* Ajustes para dispositivos menores */
         @media (max-width: 768px) {
+            html, body {
+                overflow: hidden !important; /* Remove barras laterais e da base */
+                width: 100vw !important; /* Garante que a largura não exceda a tela */
+                height: 100vh !important; /* Mantém proporções corretas */
+                zoom: 1 !important; /* Evita zoom automático */
+            }
+
             .container {
                 max-width: 100% !important;
                 display: flex !important;
@@ -57,23 +64,22 @@
                 flex-direction: column !important;
                 text-align: center !important;
                 padding-top: 20px !important;
-                overflow: hidden !important; /* Impede o zoom inesperado */
             }
 
             /* Ajuste do logotipo no celular */
             .logo {
                 display: block !important;
                 margin: 0 auto !important; /* Mantém totalmente centralizado */
-                max-width: 180% !important; /* Aumentado ainda mais */
+                max-width: 180% !important; /* Aumentado um pouco mais */
                 height: auto !important;
             }
 
             /* Ajuste do botão no celular */
             .btn {
-                font-size: 16px !important; /* Aumentado um pouco */
+                font-size: 16px !important; /* Mantém tamanho adequado */
                 padding: 10px 16px !important;
                 display: block !important;
-                margin: auto !important; /* Mantém completamente centralizado */
+                margin: auto !important; /* Centraliza corretamente */
                 text-align: center !important;
             }
 
