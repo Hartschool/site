@@ -50,34 +50,40 @@
         /* Ajustes para dispositivos menores */
         @media (max-width: 768px) {
             .container {
+                max-width: 100% !important;
                 display: flex !important;
-    justify-content: center !important; /* Centraliza horizontalmente */
-    align-items: center !important; /* Centraliza verticalmente */
-    flex-direction: column !important;
-    text-align: center !important; /* Garante que tudo fique centralizado */
-}
+                justify-content: center !important;
+                align-items: center !important;
+                flex-direction: column !important;
+                text-align: center !important; /* Centraliza tudo */
+                padding-top: 20px !important;
+            }
 
             /* Ajuste do logotipo no celular */
             .logo {
-    display: block !important;
-    margin: auto !important; /* Centraliza horizontalmente */
-    max-width: 140% !important; /* Mantém o aumento do tamanho */
-    height: auto !important;
-}
+                display: block !important;
+                margin: 0 auto !important; /* Mantém totalmente centralizado */
+                max-width: 150% !important; /* Agora maior e corretamente centralizado */
+                height: auto !important;
+            }
 
             /* Ajuste do botão no celular */
             .btn {
-    display: block !important;
-    margin: auto !important; /* Mantém 100% centralizado */
-    text-align: center !important;
-}
+                font-size: 14px !important; /* Diminui um pouco */
+                padding: 8px 12px !important;
+                display: block !important;
+                margin: auto !important; /* Mantém centralizado */
+                text-align: center !important;
+            }
 
             /* Ajuste da mãozinha no celular */
             .cursor {
+                width: 45px !important;
                 position: absolute;
-    left: 50% !important; /* Centraliza horizontalmente */
-    transform: translateX(-50%) !important; /* Ajusta o posicionamento */
-}
+                left: 50% !important; /* Centraliza horizontalmente */
+                transform: translateX(-50%) !important; /* Ajusta o posicionamento */
+            }
+        }
 
         /* Animação da mãozinha */
         @keyframes click {
@@ -99,3 +105,4 @@
 
 </body>
 </html>
+
