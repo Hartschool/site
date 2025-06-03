@@ -50,24 +50,20 @@
         /* Ajustes para dispositivos menores */
         @media (max-width: 768px) {
             .container {
-                max-width: 100% !important;
                 display: flex !important;
-                justify-content: center !important;
-                align-items: center !important;
-                flex-direction: column;
-                padding-top: 20px !important;
-                text-align: center !important;
-            }
+    justify-content: center !important; /* Centraliza horizontalmente */
+    align-items: center !important; /* Centraliza verticalmente */
+    flex-direction: column !important;
+    text-align: center !important; /* Garante que tudo fique centralizado */
+}
 
             /* Ajuste do logotipo no celular */
             .logo {
-                display: block !important;
-                margin-left: auto !important;
-                margin-right: auto !important; /* Mantém 100% centralizado */
-                max-width: 140% !important; /* Agora maior e corretamente centralizado */
-                height: auto !important;
-                text-align: center !important; /* Garante a centralização */
-            }
+    display: block !important;
+    margin: auto !important; /* Centraliza horizontalmente */
+    max-width: 140% !important; /* Mantém o aumento do tamanho */
+    height: auto !important;
+}
 
             /* Ajuste do botão no celular */
             .btn {
